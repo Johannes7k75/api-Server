@@ -1,47 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" color-mode="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="add.css">
-</head>
+    <link rel="stylesheet" href="add.css" />
+  </head>
 
-<body>
+  <body>
     <form>
-        <input type="button" value="Zurück!" onclick="history.back()">
+      <a id="back" href="../index.html">Zurück!</a>
     </form>
     <div id="table">
-        <div class="header">
-            <h2>Name</h2>
-            <h2>Reihen</h2>
-            <h2>Stück größe</h2>
-            <h2>Stück zahl</h2>
+      <div class="header">
+        <h2>Name</h2>
+        <h2>Reihen</h2>
+        <h2>Stück größe</h2>
+        <h2>Stück zahl</h2>
+      </div>
+      <div id="tableId-1" class="row">
+        <input class="name" placeholder="Tomaten" type="text" />
+        <div class="button add">
+          <svg class="addSvg" viewBox="0 0 20 20">
+            <path
+              d="M 8 0 L 12 0 L 12 8 L 20 8 L 20 12 L 12 12 L 12 20 L 8 20 L 8 12 L 0 12 L 0 8 L 8 8 L 8 0"
+            ></path>
+          </svg>
         </div>
-        <div id="tableId-1" class="row">
-            <input class="name" placeholder="Tomaten" type="text">
-            <div class="button add">
-                <svg class="addSvg " viewBox="0 0 20 20">
-                    <path d="M 8 0 L 12 0 L 12 8 L 20 8 L 20 12 L 12 12 L 12 20 L 8 20 L 8 12 L 0 12 L 0 8 L 8 8 L 8 0">
-                    </path>
-                </svg>
-            </div>
-            <div class="button remove">
-                <svg class="removeSvg " viewBox="0 0 20 20">
-                    <path d="M 0 8 L 20 8 L 20 12 L 0 12">
-                    </path>
-                </svg>
-            </div>
-            <input class="stockSize" placeholder="500" type="text">
-            <input class="stock" placeholder="20" type="text">
+        <div class="button remove">
+          <svg class="removeSvg" viewBox="0 0 20 20">
+            <path d="M 0 8 L 20 8 L 20 12 L 0 12"></path>
+          </svg>
         </div>
+        <input class="stockSize" placeholder="500" type="text" />
+        <input class="stock" placeholder="20" type="text" />
+      </div>
     </div>
     <div>
-        <button id="submit">Submit</button>
+      <button id="submit">Submit</button>
     </div>
     <script src="./add.js"></script>
-</body>
-
+  </body>
 </html>
