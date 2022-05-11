@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Document</title>
+    <meta charset="utf-8">
+    <link type="image/x-icon" href="/favicon.ico">
+    <link type="text/css" rel="stylesheet" href="/style.css">
+    <script src="/darkmode.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="topNav">
+            <div class="header-action">
+                <h2 id="header-action add"><a href="./actions/add.html">Neu</a></h2>
+                <div id="addOverlay">
+                    <div>
+                        <div>
+                            <h2>Name</h2>
+                            <input type="text" name="Name" id="addName" placeholder="Gurke">
+                        </div>
+                        <div class="header-action">
+                            <h2>Reihen</h2>
+                            <div class="overlay-row-action">
+                                <h2 class="header-action-add button">
+                                    <svg class="addSvg" viewBox="0 0 20 20">
+                                        <path
+                                            d="M 8 0 L 12 0 L 12 8 L 20 8 L 20 12 L 12 12 L 12 20 L 8 20 L 8 12 L 0 12 L 0 8 L 8 8 L 8 0">
+                                        </path>
+                                    </svg>
+                                </h2>
+                                <h2 class="header-action-remove button">
+                                    <svg class="removeSvg" viewBox="0 0 20 20">
+                                        <path d="M 0 8 L 20 8 L 20 12 L 0 12">
+                                        </path>
+                                    </svg>
+                                </h2>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>Stück Größe</h2>
+                            <input type="text" name="Stück größe" id="addStockSize" placeholder="200">
+                        </div>
+                        <div>
+                            <h2>Stück zahl</h2>
+                            <input type="text" name="Stück zahl" id="addStock" placeholder="20">
+                        </div>
+
+                    </div>
+                </div>
+                <h2 id="header-action-edit">Bearbeiten</h2>
+                <h2 id="header-action-remove">Entfernen</h2>
+                <h2 id="header-action-remove-confirm">Entfernen</h2>
+            </div>
+            <menu>
+                <!-- Light mode button -->
+                <button class="color-mode light-hidden" aria-label="Toggle light mode" onclick="changeColorMode()">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2em"
+                        height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                        class="fill-current text-gray-200 hover:text-white h-6 w-6" aria-hidden="true">
+                        <g fill="none">
+                            <path
+                                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 1 1-8 0a4 4 0 0 1 8 0z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:currentColor;">
+                            </path>
+                        </g>
+                    </svg>
+                </button>
+
+
+                <!--- Dark mode button --->
+                <button class="color-mode dark-hidden" aria-label="Toggle dark mode" onclick="changeColorMode()"><svg
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2em"
+                        height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                        class="fill-current text-gray-200 hover:text-white h-6 w-6" aria-hidden="true">
+                        <g fill="none">
+                            <path
+                                d="M20.354 15.354A9 9 0 0 1 8.646 3.646A9.003 9.003 0 0 0 12 21a9.003 9.003 0 0 0 8.354-5.646z"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                data-darkreader-inline-stroke="" style="--darkreader-inline-stroke:currentColor;">
+                            </path>
+                        </g>
+                    </svg></button>
+            </menu>
+        </div>
+    </header>
+    <div id="table">
+        <div id="head">
+            <h1 class="info">Name</h1>
+            <h1 class="info stock-size">Stück größe</h1>
+            <h1 class="info">Stück zahl</h1>
+
+        </div>
+    </div>
+    <script src="/main.js"></script>
+</body>
+
+</html>
