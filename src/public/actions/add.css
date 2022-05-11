@@ -4,84 +4,84 @@
 
 :root,
 [color-mode="light"] {
-  --background: wheat;
-  --text: #000000;
-  --inputbox-inner: wheat;
-  --inputbox-border: #676774;
+    --background: wheat;
+    --text: #000000;
+    --inputbox-inner: wheat;
+    --inputbox-border: #676774;
 }
 
 [color-mode="dark"] {
-  --background-color: #1c1b22;
-  --text: #fbfbfe;
-  --inputbox-inner: #2b2a33;
-  --inputbox-border: #b1b1b9;
+    --background-color: #1c1b22;
+    --text: #fbfbfe;
+    --inputbox-inner: #2b2a33;
+    --inputbox-border: #b1b1b9;
 }
 
 input {
-  background-color: var(--inputbox-inner);
-  border-color: var(--inputbox-border);
-  color: var(--text);
+    background-color: var(--inputbox-inner);
+    border-color: var(--inputbox-border);
+    color: var(--text);
 }
 
 #back {
-  border: 1px solid var(--text);
-  border-radius: 0.25rem;
+    border: 1px solid var(--text);
+    border-radius: 0.25rem;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 14px;
-  background-color: #1c1b22;
-  color: var(--text);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    background-color: #1c1b22;
+    color: var(--text);
 }
 
 .header {
-  grid-template-columns: 40% 10% 30% 20%;
-  display: grid;
+    grid-template-columns: 40% 10% 30% 20%;
+    display: grid;
 }
 
 .row {
-  display: grid;
-  grid-template-columns: 40% 5% 5% 30% 20%;
+    display: grid;
+    grid-template-columns: 40% 5% 5% 30% 20%;
 }
 
-.row > * {
-  margin-right: 10px;
+.row>* {
+    margin-right: 10px;
 }
 
 .addSvg,
 .removeSvg {
-  margin-right: 10px;
-  width: 30px;
-  height: 30px;
-  fill: white;
-  padding: 2px;
-  border-radius: 0.375rem;
-  border: 2px solid white;
-  pointer-events: none;
-  background-color: #1c1b22;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    fill: white;
+    padding: 2px;
+    border-radius: 0.375rem;
+    border: 2px solid white;
+    pointer-events: none;
+    background-color: #1c1b22;
 }
 
 .button {
-  margin: 0px;
+    margin: 0px;
 }
 
 #submit {
-  margin-left: 50%;
-  margin-right: 50%;
-  margin-top: 40px;
-  height: 30px;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-top: 40px;
+    height: 30px;
 }
 
 .toast {
-  border-radius: 0.375rem;
-  border: 2px solid rgb(170, 88, 88);
-  width: 50%;
-  margin: 30px auto;
+    border-radius: 0.375rem;
+    border: 2px solid rgb(170, 88, 88);
+    width: 50%;
+    margin: 30px auto;
 }
 
-.toast > p {
-  margin: 0px;
-  padding: 10px;
-  text-align: center;
+.toast>p {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
 }
